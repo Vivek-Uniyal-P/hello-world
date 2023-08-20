@@ -34,3 +34,9 @@ def fruit_function(**kwargs): #**kwargs is a tuple with all the elements passed 
     print(kwargs)
 
 fruit_function(fruit = 'apple', veggies = "eggplant") #any numbers of functions can be passed here.
+print("hello".title() == "hello".capitalize())
+
+print("hello vivek uniyal".capitalize()) #First word having first character as capital letter. rest small case.
+print("hello vivek uniyal".title()) #each word having first charater as capital letter. rest small case.
+#Hello vivek uniyal
+#Hello Vivek Uniyal
