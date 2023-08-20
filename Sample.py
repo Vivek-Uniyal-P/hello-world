@@ -16,7 +16,7 @@ insert(index, object, /) method of builtins.list instance
 
 mylist = ['O', "" , ""]
 shuffle(mylist)
-choice = input("Select an Option out of 1, 2 or 3 : ")
+choice = '1'#input("Select an Option out of 1, 2 or 3 : ")
 if choice not in ['1','2','3']:
     print("Invalid Choice !")
 elif mylist[int(choice) - 1] == "O":
@@ -25,9 +25,12 @@ else:
     print(f"You are a looser !  {mylist}", end="\n\n")
 
 #*args and **kwargs in Python
-def five_percent_of_sum(*args):
+def five_percent_of_sum(*args): #args is a tuple with all the elements passed here.
     print(sum(args) * 0.05)
 
 five_percent_of_sum(1,3,4,34) #any numbers of functions can be passed here.
 
+def fruit_function(**kwargs): #**kwargs is a tuple with all the elements passed here.
+    print(kwargs)
 
+fruit_function(fruit = 'apple', veggies = "eggplant") #any numbers of functions can be passed here.
