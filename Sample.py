@@ -40,3 +40,9 @@ print("hello vivek uniyal".capitalize()) #First word having first character as c
 print("hello vivek uniyal".title()) #each word having first charater as capital letter. rest small case.
 #Hello vivek uniyal
 #Hello Vivek Uniyal
+
+# join function
+value = "Vivek Uniyal"
+value_list = value.split()
+print(value_list)
+print("--".join(value_list))
